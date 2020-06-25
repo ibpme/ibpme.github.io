@@ -1,0 +1,164 @@
+body{
+  background-color: rgb(41,39,32);
+  background: linear-gradient(0deg, rgba(19,19,19,1) 0%,  rgba(41,39,32,1)50%, rgba(19,19,19,1) 100%);
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+}
+nav{
+  background-color: #3d3b37;
+  position: fixed;
+  z-index:1;
+  width:100%;
+  height:5em ;
+  font-family: 'Barlow', sans-serif;
+}
+.navbutton{
+  display: inline-block;
+  margin-top: 0.1em;
+  padding: 0.1em 2em;
+  font-weight: 400;
+  font-size: 1.5em;
+  color:gray;
+  text-shadow: 0.05em 0.05em black;
+}
+.navbutton:hover{
+  color:black;
+}
+.landscape{
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  width: 100%;
+  height: 100vh;  
+  margin: 0;
+}
+ .color-trans{
+  background-color: #282725;
+  z-index: 2;
+  opacity: 0.6;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.website-title{
+  position: absolute;
+  color: black;
+  font-size: 8em;
+  top : 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.profile{
+  background: rgb(41,39,32);
+  background: linear-gradient(0deg, rgba(19,19,19,1) 0%,  rgba(41,39,32,1)50%, rgba(19,19,19,1) 100%);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.description{
+  position: absolute;
+  width: 40%;
+  height: 0.5*width;
+  left:50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+
+  color:white;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+  margin: 2em;
+}
+
+#profile-pic{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+
+  width: 15%;
+  height: width;
+  border-radius: 50%;
+  border: 0.75em solid #3d3b37;
+  margin: 1em;
+}
+
+#name{
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+
+  color: #b3aa94;
+  font-size: 3em;
+  text-shadow: 0.01em 0 grey;
+  font-weight: 400;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+h1 ,p{
+  margin:0.1em;
+}
+
+
+.itb{
+  text-decoration: none;
+  color:white;
+}
+.itb:hover{
+  color:grey;
+}
+
+.social-media {
+  position: absolute;
+  top:60%;
+  left:50%;
+  margin-top:0.8em;
+  max-width: 600px;
+  text-align:center;
+  font-size: 40px;
+  color: beige;
+  transform: translateX(-50%);
+}
+.social-media h2{
+  font-size: 0.5em;
+  font-weight: 300;
+}
+.social-media a, .contact a{
+  color: beige;
+}
+
+.contact{
+  position: absolute;
+  width: 50%;
+  top:75%;
+  left:50%;
+  font-size: 40px;
+  text-align:center;
+  color: beige;
+  transform: translateX(-50%);
+  margin-top: 0.5em;
+}
+
+
+.email{
+  display:inline-block;
+  width:100%;
+  font-size: 0.5em;
+}
+.email h2{
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.email p{
+  font-size: 0.5em;
+}
