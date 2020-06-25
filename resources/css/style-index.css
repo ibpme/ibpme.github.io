@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body{
@@ -11,7 +12,6 @@ body{
   background: linear-gradient(0deg, rgba(19,19,19,1) 0%,  rgba(41,39,32,1)50%, rgba(19,19,19,1) 100%);
   margin:0;
   font-family: 'Roboto', sans-serif;
-  display: block;
 }
 
 body::-webkit-scrollbar{
@@ -24,24 +24,48 @@ body::-webkit-scrollbar-thumb{
  background: black;
 }
 
-nav{
+.large-nav{
   background-color: #3d3b37;
   background: none;
   position: fixed;
   z-index:2;
   width:100%;
-  height:5em ;
+  height:5rem ;
   font-family: 'Barlow', sans-serif;
+}
+
+.small-nav{
+  position: fixed;
+  z-index: 3;
+  display: none;
+  background-color: #3d3b37;
+  width:100%;
+  height: 5rem;
+}
+.small-nav select{
+  background-color: #3d3b37;
+  font-family: 'Barlow', sans-serif;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-weight: 200 ;
+  border: 1px solid #aaa;
+  border-color: #282725;
+  border-radius: .5em;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+}
+.small-nav select option{
+  text-align: center;
 }
 
 .navbutton{
   display: inline-block;
-  margin-top: 0.1em;
-  padding: 0.1em 2em;
+  margin-top: 0.1rem;
+  padding: 0.1rem 2rem;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color:gray;
-  text-shadow: 0.05em 0.05em black;
+  text-shadow: 0.05rem 0.05rem black;
 }
 
 .navbutton:hover{
@@ -68,7 +92,7 @@ nav{
   top: 90%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 5em;
+  font-size: 5rem;
 }
 
  .color-trans{
@@ -82,66 +106,72 @@ nav{
 .website-title{
   position: absolute;
   color: black;
-  font-size: 8em;
+  font-size: 8rem;
   top : 45%;
   left: 50%;
   transform: translate(-50%,-50%);
-
 }
+
+
 .profile{
   background: rgb(41,39,32);
   background: linear-gradient(0deg, rgba(19,19,19,1) 0%,  rgba(41,39,32,1)50%, rgba(19,19,19,1) 100%);
-  position: relative;
+  position: relative; /*Neccesary To Make Child Absoulute*/
   width: 100%;
   height: 100vh;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-.description{
-  position: absolute;
-  width: 40%;
-  height: 0.5*width;
-  left:50%;
-  top: 40%;
-  transform: translate(-50%,-50%);
 
-  color:white;
-  font-size: 1.5em;
-  font-weight: 400;
-  font-style: normal;
-  margin: 2em;
+.bio{
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+}
+.name-description{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 1rem;
+  padding: 0.5rem;
+  max-width: 960px;
 }
 
 #profile-pic{
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-50%,-50%);
-
-  width: 15%;
+ 
+  width: 20%;
   height: width;
+  min-width: 240px;
+  min-height: min-width;
   border-radius: 50%;
-  border: 0.75em solid #3d3b37;
-  margin: 1em;
+  border: 0.75rem solid #3d3b37;
+  margin: 1rem;
+}
+
+.description{
+
+  width: 100%;
+  height: 0.5*width;
+  color:white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #name{
-  position: absolute;
-  left: 45%;
-  top: 20%;
-  transform: translate(-50%,-50%);
-
+  width:100%;
   color: #b3aa94;
-  font-size: 3em;
-  text-shadow: 0.01em 0 grey;
+  margin:0;
+  font-size: 3rem;
+  text-shadow: 0.01rem 0 grey;
   font-weight: 400;
   opacity: 0.7;
-  z-index: 3;
 }
-
-h1 ,p{
-  margin:0.1em;
-}
-
 
 .itb{
   text-decoration: none;
@@ -155,15 +185,15 @@ h1 ,p{
   position: absolute;
   top:60%;
   left:50%;
-  margin-top:0.8em;
+  margin-top:0.8rem;
   max-width: 600px;
   text-align:center;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: beige;
   transform: translateX(-50%);
 }
 .social-media h2{
-  font-size: 0.5em;
+  font-size: 1rem;
   font-weight: 300;
 }
 .social-media a, .contact a{
@@ -175,25 +205,65 @@ h1 ,p{
   width: 50%;
   top:75%;
   left:50%;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align:center;
   color: beige;
   transform: translateX(-50%);
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 
 
 .email{
   display:inline-block;
   width:100%;
-  font-size: 0.5em;
+  font-size: 2rem;
 }
 .email h2{
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 300;
-  margin-top: 1em;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 .email p{
-  font-size: 0.5em;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .large-nav{
+    display: none;
+  }
+  .small-nav{
+    display: inline;
+  }
+  #profile-pic{
+
+  width: 20%;
+  height: width;
+  min-width: 100px;
+  min-height: min-width;
+  border-radius: 50%;
+  border: 0.75rem solid #3d3b37;
+  margin: 1rem;
+}
+
+.bio{
+  width: 80%;
+  margin-top: 4rem;
+}
+
+}
+
+@media only screen and(max-height:600){
+  .social-media,.contact{
+  font-size: small;
+}
 }

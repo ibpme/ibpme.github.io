@@ -5,8 +5,9 @@
 2. Change Paragraph description font
 3. Make Page responsive and phone suitable
 4. Seperate Jquery script from HTML
-5. Adjut MArgin in social media logo
+5. Adjut Margin in social media logo
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no>
@@ -24,7 +25,7 @@
 
 
 <body>
-    <nav>
+    <nav class="large-nav">
         <ul>
             <a class="navbutton">HOME</a>
             <a class="navbutton">PROJECTS</a>
@@ -32,69 +33,55 @@
             <a class="navbutton">BLOGS</a>
         </ul>
     </nav>
+    <nav class="small-nav">
+        <select>
+            <option >HOME</option>
+            <option >PROJECTS</option>
+            <option >PHOTOS</option>
+            <option >BLOGS</option>
+        </select>
+    </nav>
     <!-- <h1 class="website-title">ibpme.github.io</h1> -->
-    <a href="#profile-section" id="arrow"><i class="fas fa-arrow-down"></i></a>
+    <a href="#profile-pic" id="arrow"><i class="fas fa-arrow-down"></i></a>
     <section class="landscape">
         <div class="color-trans">
         </div>
     </section>
-    <section id="profile-section" class="profile">
+    <section  class="profile">
+        <div class="bio">
             <img id="profile-pic" src="./resources/images/profile-photo.png">
-            <h1 id="name">Iman-Budi Pranakasih</h1>
-            <p class="description" >Just an ordinary college student with a great passion for learning and a
-                curiousity to create. Spend a lot time programming and creating random stuff. Very
-                interested in movies and science. Currently majoring in
-                Mathematics at <a class="itb" href="https://www.itb.ac.id/" target="_blank">Bandung
-                    Institute of Technology.</a><br><br> This website is just to fill in the purpose of
-                sharing my projects and improving my web development skills. Enjoy!
-            </p>
-            <div class="social-media">
-                <h2>Social Media</h2>
-                <a href="https://www.twitter.com/ibpme" target="blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/ibpma" target="blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/ibud.pran" target="blank"><i class="fab fa-facebook"></i></a>
+            <div class="name-description">
+                <h1 id="name">Iman-Budi Pranakasih</h1>
+                <p class="description">Just an ordinary college student with a great passion for learning and a
+                    curiousity to create. Spend a lot time programming and creating random stuff. Very
+                    interested in movies and science. Currently majoring in
+                    Mathematics at <a class="itb" href="https://www.itb.ac.id/" target="_blank">Bandung
+                        Institute of Technology.</a><br><br> This website is just to fill in the purpose of
+                    sharing my projects and improving my web development skills. Enjoy!
+                </p>
             </div>
-            <div class="contact">
-                <a href="https://github.com/ibpme" target="blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/iman-budi-pranakasih-97b54812b/" target="blank"><i class="fab fa-linkedin"></i></a>
-                <br>
-                
-                <div class=email>
-                    <h2>Contact Me</h2>
-                    <i class="fas fa-envelope"></i>
-                    <p>ibpranakasih@gmail.com</p>
-                </div>
-                
+            
+        </div>
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <a href="https://www.twitter.com/ibpme" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ibpma" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ibud.pran" target="blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="contact">
+            <a href="https://github.com/ibpme" target="blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/iman-budi-pranakasih-97b54812b/" target="blank"><i class="fab fa-linkedin"></i></a>
+            <br>
+            
+            <div class=email>
+                <h2>Contact Me</h2>
+                <i class="fas fa-envelope"></i>
+                <p>ibpranakasih@gmail.com</p>
             </div>
-        </section>
+            
+        </div>
+    </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("#arrow").on('click', function (event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
-</script>
-
-
+<script src="./resources/index.js"></script>
 </html>
