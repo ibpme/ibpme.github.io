@@ -1,3 +1,7 @@
+/* TODO:
+1. Clean CSS
+*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,8 +14,19 @@ body{
   display: block;
 }
 
+body::-webkit-scrollbar{
+  width: 0.1rem;
+}
+body::-webkit-scrollbar-track{
+ background: beige;
+}
+body::-webkit-scrollbar-thumb{
+ background: black;
+}
+
 nav{
   background-color: #3d3b37;
+  background: none;
   position: fixed;
   z-index:2;
   width:100%;
