@@ -9,6 +9,7 @@ body{
   font-family: 'Roboto', sans-serif;
   display: block;
 }
+
 nav{
   background-color: #3d3b37;
   position: fixed;
@@ -17,6 +18,7 @@ nav{
   height:5em ;
   font-family: 'Barlow', sans-serif;
 }
+
 .navbutton{
   display: inline-block;
   margin-top: 0.1em;
@@ -26,9 +28,11 @@ nav{
   color:gray;
   text-shadow: 0.05em 0.05em black;
 }
+
 .navbutton:hover{
   color:black;
 }
+
 .landscape{
   background-image: url("../images/background.png");
   background-size: cover;
@@ -40,6 +44,7 @@ nav{
   height: 100vh;  
   margin: 0;
 }
+
 #arrow{
   position: absolute;
   color: beige;
@@ -49,8 +54,8 @@ nav{
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 5em;
-
 }
+
  .color-trans{
   background-color: #282725;
   z-index: 2;
