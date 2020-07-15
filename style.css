@@ -236,6 +236,9 @@ footer {
   :root {
     font-size: 12px;
   }
+  .title h1 {
+    font-size: 2rem;
+  }
   section {
     background-color: #976c51;
     display: flex;
