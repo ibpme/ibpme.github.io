@@ -1,204 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root{
-    font-size: 16px;
-    scroll-behavior: smooth
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 /* OnClick Button Change Font Type  */
-body{
-    margin:0;
-    /* font-family: 'Roboto Mono', sans-serif; */
-    /* font-family: 'Almari', sans-serif; */
-    font-family: 'Work Sans', sans-serif;
+body {
+  margin: 0;
+  /* font-family: 'Roboto Mono', sans-serif; */
+  /* font-family: 'Almari', sans-serif; */
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 /* Scrollbar Modifications */
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 0.1rem;
 }
-body::-webkit-scrollbar-track{
- background: #976c51;
+body::-webkit-scrollbar-track {
+  background: #976c51;
 }
-body::-webkit-scrollbar-thumb{
- background: #232c35;
-}
-
-h1,h2{
-    font-size: 2.5rem;
-    color:#f1e0cc;
-    margin: 0;
+body::-webkit-scrollbar-thumb {
+  background: #232c35;
 }
 
-p,a{
-    margin:0.5rem;
-    font-size: 1.5rem;
-    color:#f3e6d5;
+h1,
+h2 {
+  font-size: 2.5rem;
+  color: #f1e0cc;
+  margin: 0;
 }
 
-header,section,footer{
-    height: 100vh;
-    position: relative;
-    
+p,
+a {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: #f3e6d5;
 }
 
-header{
-    background-color: #232c35;
-    text-align: center;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-section{
-    background-color: #976c51;
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-}
-footer{
-    background-color: #f5bd7d;
-    /* background-color: blue; */
-    display: grid;
-    grid-row: 2;
-    grid-template-rows: 20% 80%;
+header,
+section,
+footer {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: relative;
 }
 
-.title .text-container{
-    position: absolute;
-    
-    transform: translate(-50%,-50%);
-    top:40%;left:50%;
+header {
+  background-color: #232c35;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title .text-container {
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
 }
 
 /* TypeWriter Effect */
 .title h1 {
-    font-size: 3.5rem;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #f5bd7d; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s  infinite;
+  font-size: 3.5rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #f5bd7d; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effectstep-end */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #f5bd7d; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f5bd7d;
+  }
 }
 /* TypeWriter Effect */
+section {
+  background-color: #976c51;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section .picture {
+  height: 100%;
+  width: 20%;
+  padding-top: 4rem;
+}
+section .picture img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 3rem 0;
+}
+section .info {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section .info div {
+  padding: 2rem;
+}
+
+section .email,
+.social {
+  text-align: center;
+}
+
+.email {
+  font-family: inherit;
+  font-size: 2rem;
+  color: #f1e0cc;
+  text-align: center;
+}
 
 /* Make Arrow Animation In JS */
 .arrow {
-    position: absolute;
-    text-align: center;
-    height: 25%;
-    width: 10%;
-    text-align: center;
-    transform: translateX(-50%);
-    top:75%;left:50%;    
+  position: absolute;
+  text-align: center;
+  height: 25%;
+  width: 10%;
+  text-align: center;
+  transform: translateX(-50%);
+  top: 75%;
+  left: 50%;
 }
-.arrow a{
-    display: none;
-    font-size: 5rem;
-    position: relative;
-    width: 10%;
-    top:20%;
-    left:50%;
-    transform: translateX(-50%);
-}
-
-@keyframes arrowTranslate{
-    0%{
-        top:0
-    }
-    100%{
-        top:20%
-    }
-}
-.arrow:hover a{
-    animation: arrowTranslate 1000ms ease-in-out;
-    display: block;
-    transition:all 300ms;
+.arrow a {
+  display: none;
+  font-size: 5rem;
+  position: relative;
+  width: 10%;
+  top: 20%;
+  left: 50%;
 }
 
-
-.picture div{
-    padding:25%
+@keyframes arrowTranslate {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 20%;
+  }
 }
-.picture img{
-    
-    width: 100%;
-    border: #775648;
-    border-radius: 50%;
-    box-shadow: 0 0 0.5rem 0.2rem #d6a06c ;
-}
-
-.bio {
-    margin-top: 10%;
-    margin-right: 20%;
-    margin-bottom: 40%;
-}
-.bio h1{
-    margin: 3rem;
+.arrow:hover a {
+  animation: arrowTranslate 1000ms ease-in-out;
+  display: block;
+  transition: all 300ms;
 }
 
-.bio .social{
-    z-index: 1;
-    margin: 5%;
-    padding: 5%;
-    text-align: center;
-}
-.bio .social a{
-    z-index: 2;
-    font-size: 2rem;
-    color:#f1e0cc;
-    display: inline;
-    z-index: 1;
+footer {
+  background-color: #f5bd7d;
+  /* background-color: blue; */
+  display: grid;
+  grid-row: 2;
+  grid-template-rows: 10% 90%;
 }
 
-.email{
-    margin: 5%;
-    padding: 5%;
-    font-family: inherit;
-    font-size: 2rem;
-    color:#f1e0cc;
-    text-align: center;
+.projects-section div {
+  text-align: center;
+  padding: 2rem;
+}
+.projects-section h1 {
+  color: #2e3a46;
+  font-size: 5rem;
+}
+.project-container h2 {
+  color: #2a3540;
 }
 
-
-.projects-section div{
-    margin: auto;
-    text-align: center;
-}
-.projects-section h1{
-    color: #2e3a46;
-    font-size: 4rem;
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.project-container h2{
-    color: #2a3540;
-    margin: 2rem;
-}
-.project-container p{
- margin: 2rem;
-}
-.project{
-    /* a */
-    position: relative;
-    background-color: #775648;
-    border: #232c35;
-    border-radius: 5%;
-    border-width: 0.5rem;
-    box-shadow: 0 0 0.5rem 0.2rem #2a3540 ;
-    bottom: 5%;
+.project {
+  background-color: #775648;
+  border: #232c35;
+  border-radius: 5%;
+  box-shadow: 0 0 0.5rem 0.2rem #2a3540;
+  height: 17rem;
+  margin: 1rem;
 }
 
 /* @keyframes displayProject{
@@ -218,56 +223,50 @@ footer{
     opacity: 100;
 } */
 
-.project:hover{
-    box-shadow: 0 0 1rem 0.5rem #2a3540 ;
-    transition: 500ms;
+.project:hover {
+  box-shadow: 0 0 1rem 0.5rem #2a3540;
+  transition: 500ms;
 }
-.project a{
-    text-decoration: none;
-    color:#976c51
-}
-
-
-@media (max-width:1280px){
-    :root{
-        font-size: 12px;
-    }
-}
-@media (max-width:900px){
-    .text-container h1{
-        font-size: 14px;
-        margin:10px;
-    }
-    section{
-        grid-template-columns: none;
-        grid-template-rows: 20% 80%;
-        height: 100vh;
-        text-align: center;
-    }
-    
-    .picture{
-        text-align: center;
-        margin: auto;
-        /* height: 40%; */
-        width: 200px;
-        padding: 0; 
-    }
-    .bio {
-        width: 80%;
-        margin: auto;
-    }
-    .profile .arrow{
-        display: none;
-    }
-    .social, .email{
-        padding: 0;
-    }
+.project a {
+  text-decoration: none;
+  color: #976c51;
 }
 
-@media (max-height:700px){
-    :root{
-        font-size: 10px;
-    }
+@media (max-width: 700px) {
+  :root {
+    font-size: 12px;
+  }
+  section {
+    background-color: #976c51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  section .picture {
+    height: 20%;
+    width: 100%;
+  }
+  section .picture img {
+    border-radius: 50%;
+    width: 10rem;
+  }
+  section .info {
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projects-section .project-text {
+    padding: 0;
+  }
 }
 
-
+@media (max-width: 1280px) {
+  :root {
+    font-size: 12px;
+  }
+}
