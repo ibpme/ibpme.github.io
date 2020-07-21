@@ -1,0 +1,236 @@
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1rem;
+}
+body::-webkit-scrollbar-track {
+  background: #232c35;
+}
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #fff;
+}
+
+.background {
+  background-image: url("./img/background.jpg   ");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.transparent {
+  background: rgba(33, 29, 29, 0.85);
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.text-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.text-container h1 {
+  font-weight: 200;
+  font-size: 3rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15rem solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effectstep-end */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 65%;
+  background: rgba(10, 10, 10, 0.85);
+  z-index: 2;
+  border-radius: 1rem;
+}
+
+.profile {
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bio {
+  margin: auto;
+  padding: 1rem;
+}
+.bio h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.bio p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.image-container {
+  margin: auto;
+  padding: 2rem;
+  filter: drop-shadow(0.2rem 0.1rem 0.2rem rgb(115, 111, 111));
+}
+.profile .picture {
+  border-radius: 0.1rem;
+  max-width: 20rem;
+  /* transform: translate(-30%, 0%); */
+}
+
+.photo-title {
+  text-align: center;
+}
+.photo-title h1 {
+  font-size: 4rem;
+}
+.album {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.photos {
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.album .caption {
+  font-size: 2rem;
+  margin-left: 5rem;
+  z-index: 2;
+}
+.album .caption h1 {
+  padding: 2rem;
+}
+.photo {
+  max-width: 30rem;
+  max-height: 40rem;
+}
+
+.photo1,
+.photo3 {
+  transform: translate(-15%, -20%);
+}
+.photo2,
+.photo4 {
+  transform: translate(15%, -80%);
+}
+
+.projects {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  background: rgba(39, 37, 37, 0.85);
+  z-index: 2;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 4rem;
+}
+
+.project-container {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  max-width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.project {
+  margin: 1rem;
+  padding: 4rem;
+  max-width: 25rem;
+  background-color: rgba(10, 10, 10, 0.3);
+  border-radius: 2rem;
+  filter: drop-shadow(0.2rem 0.1rem 0.2rem rgba(115, 111, 111, 0.2));
+  text-align: center;
+  text-decoration: none;
+}
+
+.project h2 {
+  font-size: 2rem;
+}
+.project p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project .logo {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+@media (max-width: 1280px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 8px;
+  }
+  main {
+    width: 95%;
+    overflow: auto;
+  }
+  .album .caption {
+    font-size: 3rem;
+    margin-left: 0;
+    z-index: 2;
+  }
+  .photo {
+    max-width: 25rem;
+    max-height: 35rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 8px;
+  }
+}

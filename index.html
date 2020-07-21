@@ -3,96 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>ibpme.github.io</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-      crossorigin="anonymous"
-    />
-    <meta
-      name="google-site-verification"
-      content="ursB-XsRK8kXjsuoCk1KL13Smxbv1QbfYEv6QkqMdYA"
-    />
   </head>
-  <body>
-    <header class="title">
-      <div class="text-container">
-        <h1>ibpme.github.io</h1>
-      </div>
-      <div class="arrow">
-        <a href="#profile"><i class="fas fa-arrow-down"></i></a>
+
+  <body class="background">
+    <header>
+      <div class="transparent">
+        <div class="text-container">
+          <h1>ibpme.github.io</h1>
+        </div>
       </div>
     </header>
-    <section id="profile" class="profile">
-      <div class="picture">
+
+    <div class="transparent">
+      <main>
+        <div class="photo-title">
+          <h1>photos.</h1>
+        </div>
+        <!-- <section class="profile">
+          <div class="image-container">
+            <img
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              class="picture"
+              src="./img/profile3.jpg"
+            />
+          </div>
+          <div data-aos="zoom-in-left" data-aos-duration="3000" class="bio">
+            <h1>Iman-Budi Pranakasih</h1>
+            <p>
+              Just an ordinary college student with a great passion for learning
+              and a curiousity to create. Spend a lot time programming and
+              creating random stuff. Very interested in movies and science.
+              Currently majoring in Mathematics at Bandung Institute of
+              Technology. This website is just to fill in the purpose of sharing
+              my projects and improving my web development skills. Enjoy!
+            </p>
+          </div>
+        </section> -->
+        <section class="album">
+          <div data-aos="fade-right" data-aos-duration="1500" class="caption">
+            <h1>braga.</h1>
+          </div>
+          <div class="photos">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              class="image-container"
+            >
+              <img class="photo photo1" src="./img/photo1.jpg" />
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              class="image-container"
+            >
+              <img class="photo photo2" src="./img/photo2.jpg" />
+            </div>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1500" class="caption">
+            <h1>himatika.</h1>
+          </div>
+          <div class="photos">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              class="image-container"
+            >
+              <img class="photo photo3" src="./img/photo3.jpg" />
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              class="image-container"
+            >
+              <img class="photo photo4" src="./img/photo4.png " />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="transparent">
+      <div class="projects">
         <div>
-          <img src="./profile.jpeg" alt="" />
+          <h1>projects.</h1>
         </div>
-      </div>
-      <div class="info">
-        <div class="bio">
-          <h1>Iman-Budi Pranakasih</h1>
-          <p>
-            Just an ordinary college student with a great passion for learning
-            and a curiousity to create. Spend a lot time programming and
-            creating random stuff. Very interested in movies and science.
-            Currently majoring in Mathematics at Bandung Institute of
-            Technology. This website is just to fill in the purpose of sharing
-            my projects and improving my web development skills. Enjoy!
-          </p>
-        </div>
-        <div class="email">
-          <i class="far fa-envelope-open"></i>
-          <p>ibpranakasih@gmail.com</p>
-        </div>
-        <div class="social">
-          <a href="https://www.twitter.com/ibpme" target="blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/ibpma" target="blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://www.facebook.com/ibud.pran" target="blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://github.com/ibpme" target="blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/iman-budi-pranakasih-97b54812b/"
-            target="blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
-      </div>
-      <div class="arrow">
-        <a href="#projects"><i class="fas fa-arrow-down"></i></a>
-      </div>
-    </section>
-    <footer id="projects" class="projects-section">
-      <div clas="project-text">
-        <h1>Projects.</h1>
-      </div>
-      <div>
         <div class="project-container">
-          <div class="project">
-            <a id="COVID-19" href="./COVID-API">
-              <h2>COVID-19 API</h2>
-              <i class="fas fa-viruses fa-5x"></i>
-              <p>A prototype COVID-19 API</p>
-            </a>
-          </div>
-          <div class="project">
-            <a id="Spektrum" href="http://spektrum-id.herokuapp.com/">
-              <h2>Spektrum</h2>
-              <i class="fas fa-wave-square fa-5x"></i>
-              <p>A form based web application prototype</p>
-            </a>
-          </div>
+          <a
+            data-aos="flip-up"
+            data-aos-duration="3000"
+            href="http://spektrum-id.herokuapp.com/"
+            class="project"
+          >
+            <img class="logo" src="./img/spektrum.svg" alt="" />
+
+            <h2>Spektrum</h2>
+            <p>A form based web application prototype</p>
+          </a>
+          <a
+            data-aos="flip-up"
+            data-aos-duration="3000"
+            href="./pokercash-client"
+            class="project"
+          >
+            <img class="logo" src="./img/poker.svg" alt="" />
+            <h2>PokerCash</h2>
+            <p>A tool for simulating pokerchips</p>
+          </a>
+          <a
+            data-aos="flip-up"
+            data-aos-duration="3000"
+            href="./COVID-API"
+            class="project"
+          >
+            <img class="logo" src="./img/virus.svg" alt="" />
+            <h2>COVID-19 API</h2>
+            <p>A prototype COVID-19 API</p>
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
