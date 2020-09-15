@@ -22,27 +22,6 @@
         <div class="photo-title">
           <h1>photos.</h1>
         </div>
-        <!-- <section class="profile">
-          <div class="image-container">
-            <img
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              class="picture"
-              src="./img/profile3.jpg"
-            />
-          </div>
-          <div data-aos="zoom-in-left" data-aos-duration="3000" class="bio">
-            <h1>Iman-Budi Pranakasih</h1>
-            <p>
-              Just an ordinary college student with a great passion for learning
-              and a curiousity to create. Spend a lot time programming and
-              creating random stuff. Very interested in movies and science.
-              Currently majoring in Mathematics at Bandung Institute of
-              Technology. This website is just to fill in the purpose of sharing
-              my projects and improving my web development skills. Enjoy!
-            </p>
-          </div>
-        </section> -->
         <section class="album">
           <div data-aos="fade-right" data-aos-duration="1500" class="caption">
             <h1>braga.</h1>
@@ -86,43 +65,37 @@
       </main>
     </div>
     <div class="transparent">
-      <div class="projects">
-        <div>
-          <h1>projects.</h1>
-        </div>
-        <div class="project-container">
-          <a
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            href="http://spektrum-id.herokuapp.com/"
-            class="project"
-          >
-            <img class="logo" src="./img/spektrum.svg" alt="" />
-
-            <h2>Spektrum</h2>
-            <p>Full stack web form application prototype</p>
-          </a>
-          <a
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            href="./pokercash-client"
-            class="project"
-          >
-            <img class="logo" src="./img/poker.svg" alt="" />
-            <h2>PokerCash</h2>
-            <p>Tool for simulating pokerchips</p>
-          </a>
-          <a
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            href="./COVID-API"
-            class="project"
-          >
-            <img class="logo" src="./img/virus.svg" alt="" />
-            <h2>COVID-19 API</h2>
-            <p>A simple prototype for COVID-19 API</p>
-          </a>
-        </div>
+      <section class="projects">
+        <h2>Projects</h2>
+        <table class="projects-table">
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th class="frameworks">Languange/Frameworks</th>
+          </tr>
+          <tr>
+            <td><a href="http://spektrum-id.herokuapp.com/">Spektrum</a></td>
+            <td>
+              Full stack web form application prototype
+            </td>
+            <td class="frameworks">MongoDB,Express,ReactJS,Node.JS</td>
+          </tr>
+          <tr>
+            <td><a href="./pokercash-client">PokerCash</a></td>
+            <td>
+              Tool for simulating pokerchips
+            </td>
+            <td class="frameworks">ReactJS,Python</td>
+          </tr>
+          <tr>
+            <td><a href="./COVID-API">COVID-19 API</a></td>
+            <td>
+             A simple prototype for COVID-19 data fetching.
+            </td >
+            <td class="frameworks">Javascript,Charts.Js</td>
+          </tr>
+        </table>
+      </section>
       </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
